@@ -16,9 +16,9 @@ function App() {
           </div>
   
           <div className="button-container">
-            <button className="btn decrease" onClick= {() =>{setNumber(number - 1);}}>decrease</button>
+            {number > -5 &&<button className="btn decrease" onClick= {() =>{setNumber(number - 1);}}>decrease</button>} 
             <button className="btn reset" onClick= {() =>{setNumber(0);}}>reset</button>
-            <button className="btn increase" onClick= {() =>{setNumber(number + 1);}}>increase</button>
+            {number < 5 &&<button className="btn increase" onClick= {() =>{setNumber(number + 1);}}>increase</button>}
           </div>
         </div>
       </main>
