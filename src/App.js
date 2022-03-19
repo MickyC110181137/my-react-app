@@ -17,7 +17,7 @@ function App() {
             <br/>
             <div class='form'>
               <input type="password" id="word" class="form__input" autoComplete="off" placeholder=" "/>
-              <label for="word" class="form__label">パスワードを取ります</label>
+              <label for="word" class="form__label">汝密碼，吾收之</label>
             </div>
           </div>
           <div className='img'></div>
