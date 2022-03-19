@@ -7,7 +7,21 @@ function App() {
   return (
     <div className="App">
       <main>
-        <div className="container">
+        <div className='row'>
+          <div className='Login'>
+            <div class='form'>
+              <input type="text" id="email" class="form__input" autoComplete="off" placeholder=" "/>
+              <label for="email" class="form__label">你の帳號</label>
+            </div>
+            <br/>
+            <br/>
+            <div class='form'>
+              <input type="password" id="word" class="form__input" autoComplete="off" placeholder=" "/>
+              <label for="word" class="form__label">パスワードを取ります</label>
+            </div>
+          </div>
+          
+          <div className="container">
           <h1>CCCounter</h1>
           <div className='size'>
             <span className= {`value ${number > 0 ? 'text-green': 'text-red'} ${number === 0 && 'text-black'}` }>
@@ -21,6 +35,9 @@ function App() {
             {number < 5 &&<button className="btn increase" onClick= {() =>{setNumber(number + 1);}}>increase</button>}
           </div>
         </div>
+
+        </div>
+        
       </main>
 
     </div>
