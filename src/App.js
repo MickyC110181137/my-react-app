@@ -1,39 +1,80 @@
 import logo from './logo.svg';
-/*import './App.css';
-import {useState} from "react"
+import './App.css';
+import React,{useState} from "react"
+
+import LoginForm from './Components/Slider/LoginForm.js';
+import BtnSlider from './Components/Slider/BtnSlider.js';
+import dataSlider from './Components/Slider/dataSlider';
+
 
 function App() {
+
   const [number, setNumber] =useState(0)
-  const slider_span1 = props  => {
-    <div id = {props.id}> something </div>
-   }
+  const [slideIndex, setSlideIndex] = useState(1)
+
+  const adminUser ={
+    email:"1209436216@gmail.com",
+    password:"123456"
+  }
+  const [user,setUser] = useState({name:"",email:""});
+  const [error,setError] = useState("");
+  const Login = details =>{
+    console.log(details);
+    if(details.email == adminUser.email && details.password == adminUser.password){
+      console.log(" Logged in");
+      setUser({
+        name: details.name,
+        email: details.email
+      });
+    }else{
+      console.log("Details do not match!");
+      setError("Details do not match!");
+    }
+  
+  }
+  const Logout = () =>{
+    setUser({name:"",email:""});
+  }
+
+
+  const nextSlide = () => {
+      if(slideIndex !== dataSlider.length){
+          setSlideIndex(slideIndex + 1)
+      } 
+      else if (slideIndex === dataSlider.length){
+          setSlideIndex(1)
+      }
+  }
+
+  const prevSlide = () => {
+      if(slideIndex !== 1){
+          setSlideIndex(slideIndex - 1)
+      }
+      else if (slideIndex === 1){
+          setSlideIndex(dataSlider.length)
+      }
+  }
+
+  const moveDot = index => {
+      setSlideIndex(index)
+  }
+
   return (
     <div className="App">
+      {(user.email !="")?(
+        <div className='Welcome'>
+          <h2> Welcome,<span>{user.name}</span></h2>
+            <div className='box2'>
+              <button className='logout' onClick={Logout}>Logout</button>
+            </div>
+        </div>
+      ):(
+        <LoginForm Login={Login} error={error}/>
+      )}
       <main>
 
         <div className='row'>
-          <div className='Login'>
-            <div className='box'>
-              <h1>LOGIN</h1>
-            </div>
-            <div className='box'>
-              <div class='form'>
-                <input type="text" id="email" class="form__input" autoComplete="off" placeholder=" "/>
-                <label for="email" class="form__label">你の帳號</label>
-              </div>
-            </div>
-            <div className='box'>
-              <div class='form'>
-                <input type="password" id="word" class="form__input" autoComplete="off" placeholder=" "/>
-                <label for="word" class="form__label">汝密碼，吾收之</label>
-              </div>
-            </div>
-            <div className='box'>
-              <div className='boxer' method="post">
-                <input type="submit" name="" value="Login"></input>
-              </div>
-            </div>
-          </div>
+
           <div className="container">
             <h1>COUNTER</h1>
             <div className='size'>
@@ -68,23 +109,39 @@ function App() {
           </div>
         
         </div>
+
+        <div className='picture'>
+          <div className='container-slider'>
+            {dataSlider.map((obj, index) => {
+                return (
+                  <div
+                  key={obj.id}
+                  className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
+                  >
+                      <img 
+                      src={process.env.PUBLIC_URL + `/Imgs/img${index + 1}.jpg`} 
+                      />
+                  </div>
+                )
+            })}
+              <BtnSlider moveSlide={nextSlide} direction={"next"} />
+              <BtnSlider moveSlide={prevSlide} direction={"prev"}/>
+
+              <div className="container-dots">
+                  {Array.from({length: 5}).map((item, index) => (
+                      <div 
+                      onClick={() => moveDot(index + 1)}
+                      className={slideIndex === index + 1 ? "dot active" : "dot"}
+                      ></div>
+                  ))}
+              </div>
+          </div>
+        </div>
+
       </main>
 
     </div>
   );
-}
-*/
-import './App.css';
-import Slider from'./Components/Slider/Slider.js';
-
-function App() {
-return(
-<>
-<Slider/>
-</>
-);
-}
-
-export default App;
+}export default App;
 
 

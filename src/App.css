@@ -84,9 +84,21 @@
 body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
+.Welcome{
+  display: flex;
+  height: 60px;
+  width: 100%;
+  background-color: #013a63;
+  justify-content: center;
+  letter-spacing:0.25rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  color: #80ffdb;
+}
+h2{
+  font-size: 3rem;
+}
 .row{
-  height: 100vh;
+  height: 70vh;
   width: 1200px;
   display: flex;
   flex-direction: row;
@@ -95,11 +107,37 @@ body{
   align-items: center;
   flex-wrap:nowrap;
 }
+.picture{
+  height: 600px;
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #1e6091;
+  align-items: flex-start;
+  flex-wrap:nowrap;
+}
 
 .Login{
   font-family: "Convergence",sans-serif;
   font-size: 1.2rem;
   background-color: #1e6091;
+}
+
+.logout{
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  background: transparent;
+  font-size: 1rem;
+  padding: 15px;
+  letter-spacing: 5px;
+  border: 2px solid var(--black);
+  transition: 0.3s linear;
+  color: #4cc9f0;
+}
+.logout:hover{
+  color: #80ffdb;
+  background-color: var(--black);
 }
 
 .box{
