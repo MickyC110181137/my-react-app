@@ -1,13 +1,13 @@
 import './App.css';
 import React,{useState} from "react"
-import LoginForm from './Components/Slider/LoginForm.js';
+import LoginForm from './Components/Login/LoginForm.js';
 import Yeah from './Components/Yeah'
 
 function App() {
 
   const [number, setNumber] =useState(0)
   const adminUser ={
-    email:"1209436216@gmail.com",
+    email:"1209436216",
     password:"123456"
   }
   const [user,setUser] = useState({name:"",email:""});

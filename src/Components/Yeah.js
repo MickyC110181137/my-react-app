@@ -1,9 +1,10 @@
-import './Yeah.css'
+import '../App'
 import React from 'react'
 import Slider from './Slider/Slider';
+import Todomain from './Todo/Todomain';
+import Calculator from './Calculator/Calculator';
 
-function yeah({number,setNumber}){
- 
+function yeah ({number,setNumber}) {
     return (
         <main>
             <div className='row'>
@@ -23,25 +24,26 @@ function yeah({number,setNumber}){
                 </div>
             
                 <div className='flex'>
-                    <span class="slider-span" id="slider-span1"></span>
-                    <span class="slider-span" id="slider-span2"></span>
+                    <span className="slider-span" id="slider-span1"></span>
+                    <span className="slider-span" id="slider-span2"></span>
                 
-                    <div class="img-slider">
-                        <div class="slides-div" id="slide-1">
-                            <img src={require('kick00.png')} alt="" class="img1" id="img1"></img>
-                            <button class="button1" id="button-1"></button>
+                    <div className="img-slider">
+                        <div className="slides-div" id="slide-1">
+                            <img src={require('./kick00.png')} alt="" className="img1" id="img1"></img>
+                            <button className="button1" id="button-1"></button>
                         </div>
                     </div>
-                    <div class="img-slider">
-                        <div class="slides-div" id="slide-2">
-                            <img src={require('runback00.png')} alt="" class="img2" id="img2"></img>
-                            <button class="button2" id="button-2"></button>
+                    <div className="img-slider">
+                        <div className="slides-div" id="slide-2">
+                            <img src={require('./runback00.png')} alt="" className="img2" id="img2"></img>
+                            <button className="button2" id="button-2"></button>
                         </div>
                     </div>
                 </div>
             </div>
-
             <Slider />
+            <Todomain />
+            <Calculator />
         </main>
     )
 }

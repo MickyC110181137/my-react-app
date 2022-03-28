@@ -97,6 +97,11 @@ body{
 h2{
   font-size: 3rem;
 }
+.grid{
+  height: 70vh;
+  width: 1200px;
+  background-color: #1e6091;
+}
 .row{
   height: 70vh;
   width: 1200px;
@@ -114,7 +119,7 @@ h2{
   flex-direction: row;
   justify-content: space-around;
   background-color: #1e6091;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap:nowrap;
 }
 
@@ -299,4 +304,8 @@ h1{
 }
 .text-black{
   color: #4cc9f0;
+}
+.calc-wrapper {
+  width: 400px;
+  height: 600px;
 }
