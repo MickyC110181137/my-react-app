@@ -3,6 +3,7 @@ import "./Slider.css";
 import leftArrow from "./icons/left-arrow.svg";
 import rightArrow from "./icons/right-arrow.svg";
 
+// eslint-disable-next-line react/prop-types
 export default function BtnSlider({ direction, moveSlide }) {
   console.log(direction, moveSlide);
   return (

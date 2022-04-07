@@ -1,8 +1,5 @@
 import "../App";
 import React from "react";
-import Slider from "./Slider/Slider";
-import Todomain from "./Todo/Todomain";
-import Calculator from "./Calculator/Calculator";
 
 function yeah({ number, setNumber }) {
   return (
@@ -80,9 +77,6 @@ function yeah({ number, setNumber }) {
           </div>
         </div>
       </div>
-      <Slider />
-      <Todomain />
-      <Calculator />
     </main>
   );
 }

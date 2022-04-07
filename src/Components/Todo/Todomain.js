@@ -46,19 +46,21 @@ export default function Todomain() {
   };
 
   return (
-    <div className="grid">
-      <TodoFrom
-        todos={todos}
-        setTodos={setTodos}
-        inputText={inputText}
-        setInputText={setInputText}
-        setStatus={setStatus}
-      />
-      <TodoList
-        todos={todos}
-        setTodos={setTodos}
-        filteredTodos={filteredTodos}
-      />
-    </div>
+    <main>
+      <div className="row">
+        <TodoFrom
+          todos={todos}
+          setTodos={setTodos}
+          inputText={inputText}
+          setInputText={setInputText}
+          setStatus={setStatus}
+        />
+        <TodoList
+          todos={todos}
+          setTodos={setTodos}
+          filteredTodos={filteredTodos}
+        />
+      </div>
+    </main>
   );
 }

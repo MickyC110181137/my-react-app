@@ -1,8 +1,10 @@
 import React from "react";
 
+// eslint-disable-next-line react/prop-types
 export default function Photo({ obj, index, slideIndex }) {
   return (
     <div
+      // eslint-disable-next-line react/prop-types
       key={obj.id}
       className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
     >
