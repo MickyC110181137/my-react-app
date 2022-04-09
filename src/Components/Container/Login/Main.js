@@ -1,7 +1,7 @@
-import "../../App.css";
+import "../../../App.css";
 import React, { useState } from "react";
 import LoginForm from "./LoginForm";
-import Yeah from "../Yeah";
+import Yeah from "../../Yeah";
 
 function App() {
   const [number, setNumber] = useState(0);
