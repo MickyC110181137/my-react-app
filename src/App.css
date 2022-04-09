@@ -333,7 +333,7 @@ h1{
 }
 .pagebutton:hover{
   background-color: #43aa8b;
-  background-image: url("01.png");
+  background-image: url("./react/01.png");
   background-position: center;
   color: var(--blue2);
 }
@@ -349,7 +349,7 @@ h1{
 }
 .pagebutton1:hover{
   background-color: #43aa8b;
-  background-image: url("1x.png");
+  background-image: url("./react/1x.png");
   background-position: center;
   color: var(--blue2);
 }
@@ -365,7 +365,7 @@ h1{
 }
 .pagebutton2:hover{
   background-color: #43aa8b;
-  background-image: url("02.png");
+  background-image: url("./react/02.png");
   background-position: center;
   color: var(--blue2);
 }
@@ -381,7 +381,7 @@ h1{
 }
 .pagebutton3:hover{
   background-color: #43aa8b;
-  background-image: url("03.png");
+  background-image: url("./react/03.png");
   background-position: center;
   color: var(--blue2);
 }
@@ -398,7 +398,7 @@ h1{
 }
 .pagebutton4:hover{
   background-color: #43aa8b;
-  background-image: url("04.png");
+  background-image: url("./react/04.png");
   background-position: center;
   color: rgb(15, 34, 88);
 }
