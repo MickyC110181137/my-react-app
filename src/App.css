@@ -402,3 +402,20 @@ h1{
   background-position: center;
   color: rgb(15, 34, 88);
 }
+.pagebutton5{
+  position: static;
+  width: 120px;
+  height: 50px;
+  transition: .5s;
+  background-color: var(--blue1);
+  border-radius: 0.5rem;
+  padding: 15px;
+  letter-spacing: 3px;
+  border: 2px solid var(--blue);
+}
+.pagebutton5:hover{
+  background-color: #43aa8b;
+  background-image: url("./react/04.png");
+  background-position: center;
+  color: rgb(15, 34, 88);
+}

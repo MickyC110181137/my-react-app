@@ -8,7 +8,7 @@ import Slider from "./Components/Container/Slider/Slider";
 import Todomain from "./Components/Container/Todo/Todomain";
 import Calculator from "./Components/Container/Calculator/Calculator";
 import Mainbutton from "./Components/Container/Mainbutton/Mainbutton";
-import ImageSliser from "./Components/Container/Mainbutton/SliderImage/ImageSlider";
+import Imagesliser01 from "./Components/Container/SliderImage/Imageslider01.js";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
         <Route path="/Slider" element={<Slider />} />
         <Route path="/Todomain" element={<Todomain />} />
         <Route path="/Calculator" element={<Calculator />} />
-        <Route path="/ImageSliser" element={<ImageSliser />} />
+        <Route path="/ImageSliser01" element={<Imagesliser01 />} />
       </Routes>
     </BrowserRouter>
   );

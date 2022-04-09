@@ -30,9 +30,9 @@ export default function Mainbutton() {
           <button className="pagebutton4">Calculator</button>
         </Link>
       </div>
-      <div className="Calculator">
-        <Link to="ImageSlider">
-          <button className="pagebutton4">ImageSlider</button>
+      <div className="ImageSlider01">
+        <Link to="ImageSlider01">
+          <button className="pagebutton5">ImageSlider</button>
         </Link>
       </div>
     </div>

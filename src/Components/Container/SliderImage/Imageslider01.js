@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import SliderData1 from "./SliderData1";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
-import "./ImageSlider.css";
+import "./Imageslider.css";
+import SliderData1 from "./SliderData1";
 
-export default function ImageSliser() {
+export default function ImageSliser01() {
   const [current, setCurrent] = useState(0);
   const length2 = SliderData1.length;
   const nextSlide = () => {
@@ -28,13 +28,7 @@ export default function ImageSliser() {
             className={index1 === current ? "slide active" : "slide"}
             key={slide.id}
           >
-            {index1 === current && (
-              <img
-                src={process.env.PUBLIC_URL + `/Image/image${index1 + 1}.jpg`}
-                alt=""
-                className="image"
-              />
-            )}
+            {index1 === current && <img src={Image} alt="" className="image" />}
           </div>
         );
       })}
