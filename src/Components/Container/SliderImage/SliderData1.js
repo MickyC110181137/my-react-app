@@ -1,7 +1,23 @@
-import image01 from "./Imagething/image01.PNG";
-import image02 from "./Imagething/image02.PNG";
-import image03 from "./Imagething/image03.PNG";
-import image04 from "./Imagething/image04.PNG";
-import image05 from "./Imagething/image05.PNG";
+import image1 from "./Imagething/image01.PNG";
+import image2 from "./Imagething/image02.PNG";
+import image3 from "./Imagething/image03.PNG";
+import image4 from "./Imagething/image04.PNG";
+import image5 from "./Imagething/image05.PNG";
 
-export default [image01, image02, image03, image04, image05];
+export const SliderData1 = [
+  {
+    image: image1,
+  },
+  {
+    image: image2,
+  },
+  {
+    image: image3,
+  },
+  {
+    image: image4,
+  },
+  {
+    image: image5,
+  },
+];

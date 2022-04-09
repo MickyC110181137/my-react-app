@@ -35,6 +35,8 @@
 }
 
 .slide {
+  height: 888px;
+  width: 500px;
   opacity: 0;
   transition-duration: 1s ease;
 }

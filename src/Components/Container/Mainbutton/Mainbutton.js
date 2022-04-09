@@ -31,7 +31,7 @@ export default function Mainbutton() {
         </Link>
       </div>
       <div className="ImageSlider01">
-        <Link to="ImageSlider01">
+        <Link to="Imageslider01">
           <button className="pagebutton5">ImageSlider</button>
         </Link>
       </div>
