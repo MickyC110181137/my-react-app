@@ -3,7 +3,7 @@ import React from "react";
 import "./App.css";
 
 import Main from "./Components/Login/Main";
-import Upload from "./Components/SubmitPhoto/UpLoad";
+import Upload from "./Components/Container/SubmitPhoto/UpLoad";
 import Slider from "./Components/Slider/Slider";
 import Todomain from "./Components/Todo/Todomain";
 import Calculator from "./Components/Calculator/Calculator";
@@ -40,6 +40,7 @@ function App() {
       </div>
 
       <Routes>
+        <Route></Route>
         <Route path="/Loginfrom" element={<Main />} />
         <Route path="/Upload" element={<Upload />} />
         <Route path="/Slider" element={<Slider />} />
