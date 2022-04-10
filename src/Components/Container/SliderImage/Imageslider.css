@@ -1,15 +1,17 @@
-.slider {
+.slider1 {
   position: relative;
-  height: 100vh;
+  height: 97vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(./IMG_3447.JPG);
 }
 
-.image {
-  width: 1000px;
-  height: 600px;
-  border-radius: 10px;
+.image1 {
+  width: 250px;
+  height: 555px;
+  border-radius: 20px;
 }
 
 .right-arrow {
@@ -17,7 +19,7 @@
   top: 50%;
   right: 32px;
   font-size: 3rem;
-  color: #000;
+  color: rgb(252, 252, 252);
   z-index: 10;
   cursor: pointer;
   user-select: none;
@@ -28,21 +30,30 @@
   top: 50%;
   left: 32px;
   font-size: 3rem;
-  color: #000;
+  color: rgb(255, 255, 255);
   z-index: 10;
   cursor: pointer;
   user-select: none;
 }
 
-.slide {
+.slide1 {
   height: 888px;
   width: 500px;
   opacity: 0;
   transition-duration: 1s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.slide.active {
+.slide1.active {
   opacity: 1;
   transition-duration: 1s;
   transform: scale(1.08);
+}
+
+.portfoliotext{
+  position: absolute;
+  top: 50%;
+  left: 43%;
 }

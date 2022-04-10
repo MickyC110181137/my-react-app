@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 import "./Imageslider.css";
 import { SliderData1 } from "./SliderData1";
@@ -9,7 +10,7 @@ const Imageslider01 = ({ slides }) => {
   const nextSlide = () => {
     setCurrent(current === length2 - 1 ? 0 : current + 1);
   };
-
+  console.log(current);
   const prevSlide = () => {
     setCurrent(current === 0 ? length2 - 1 : current - 1);
   };
@@ -19,17 +20,20 @@ const Imageslider01 = ({ slides }) => {
   }
 
   return (
-    <section className="slider">
+    <section className="slider1">
       <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
       <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
       {SliderData1.map((slide, index1) => {
         return (
           <div
-            className={index1 === current ? "slide active" : "slide"}
+            className={index1 === current ? "slide1 active" : "slide1"}
             key={index1}
           >
+            <div className="portfoliotext">作品集</div>
             {index1 === current && (
-              <img src={slide.image} alt="travel image" className="image" />
+              <Link to={`Portfolio${current}`}>
+                <img className="image1" src={slide.image} alt="travel image" />
+              </Link>
             )}
           </div>
         );

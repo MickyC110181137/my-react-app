@@ -7,7 +7,6 @@ import Upload from "./Components/Container/SubmitPhoto/UpLoad";
 import Slider from "./Components/Container/Slider/Slider";
 import Todomain from "./Components/Container/Todo/Todomain";
 import Calculator from "./Components/Container/Calculator/Calculator";
-import Mainbutton from "./Components/Container/Mainbutton/Mainbutton";
 import Imageslider01 from "./Components/Container/SliderImage/Imageslider01.js";
 import { SliderData1 } from "./Components/Container/SliderImage/SliderData1";
 
@@ -15,16 +14,12 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Mainbutton />} />
-        <Route path="/Loginfrom" element={<Main />} />
-        <Route path="/Upload" element={<Upload />} />
-        <Route path="/Slider" element={<Slider />} />
-        <Route path="/Todomain" element={<Todomain />} />
-        <Route path="/Calculator" element={<Calculator />} />
-        <Route
-          path="/Imageslider01"
-          element={<Imageslider01 slides={SliderData1} />}
-        />
+        <Route path="/" element={<Imageslider01 slides={SliderData1} />} />
+        <Route path="/Portfolio0" element={<Main />} />
+        <Route path="/Portfolio1" element={<Upload />} />
+        <Route path="/Portfolio2" element={<Slider />} />
+        <Route path="/Portfolio3" element={<Todomain />} />
+        <Route path="/Portfolio4" element={<Calculator />} />
       </Routes>
     </BrowserRouter>
   );
