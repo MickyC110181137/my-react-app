@@ -10,7 +10,7 @@ const Imageslider01 = ({ slides }) => {
   const nextSlide = () => {
     setCurrent(current === length2 - 1 ? 0 : current + 1);
   };
-  console.log(current);
+  console.log(process.env.REACT_APP_NOT_SECRET_CODE);
   const prevSlide = () => {
     setCurrent(current === 0 ? length2 - 1 : current - 1);
   };

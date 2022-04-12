@@ -4,6 +4,7 @@ import LoginForm from "./LoginForm";
 import Yeah from "../../Yeah";
 
 function App() {
+  console.log(process.env.PUBLIC_URL);
   const [number, setNumber] = useState(0);
   const adminUser = {
     email: "1209436216",
