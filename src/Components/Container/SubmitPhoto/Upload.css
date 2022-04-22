@@ -3,3 +3,9 @@ main{
     height: 200px;
     width: 200px;
 }
+.gridalbum{
+    display: grid;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

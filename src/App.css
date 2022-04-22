@@ -419,3 +419,17 @@ h1{
   background-position: center;
   color: rgb(15, 34, 88);
 }
+
+.gridalbum{
+  display: grid;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+label{
+  display: grid;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
