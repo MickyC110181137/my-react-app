@@ -67,7 +67,7 @@ export default function Upload() {
             style={{ display: "none" }}
             onChange={onFileUpload}
           />
-          <label htmlFor="uploadfile" type="button1">
+          <label className="label001" htmlFor="uploadfile" type="button1">
             <img src={imgUrl || Png} width={60}></img>
           </label>
         </div>

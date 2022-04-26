@@ -40,23 +40,26 @@
 *,
 ::after,
 ::before{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 :root{
-    --white: #fff;
-    --blue:#4cc9f0;
-    --blue1:#00b4d8;
-    --blue2:#caf0f8;
-    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    --ff-pri: "Roboto", sans-serif;
-    --ff-secondary: "Open Sans", sans-serif;
-    --clr-pri-1: #168aad;
-    --clr-pri-2:hsl(205, 100%, 63%);
-    --spacing: 0.25rem;
-    --radius: 1rem;
-    --fixed-width: 620px;
+  --white: #fff;
+  --white1: #f8f9fa;
+  --winter:#ade8f4;
+  --glow: #e9ecef;
+  --blue:#4cc9f0;
+  --blue1:#00b4d8;
+  --blue2:#caf0f8;
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --ff-pri: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --clr-pri-1: #168aad;
+  --clr-pri-2:hsl(205, 100%, 63%);
+  --spacing: 0.25rem;
+  --radius: 1rem;
+  --fixed-width: 620px;
 }
 .btn{
     border-radius: 0.5rem;
@@ -105,8 +108,8 @@ h2{
   background-color: #1e6091;
 }
 .row{
-  height: 70vh;
-  width: 1200px;
+  height: 100%;
+  width: 1160px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -282,7 +285,7 @@ main{
     min-height: calc(100vh - 3rem);
     display: grid;
     place-items: center;
-    background-color: #184e77;
+    background-color: var(--white);
 }
 .color{
     color: rgb(255, 145, 0);
@@ -420,16 +423,53 @@ h1{
   color: rgb(15, 34, 88);
 }
 
+
 .gridalbum{
   display: grid;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-label{
+.label001{
   display: grid;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 200px;
+}
+
+.flexhome{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.starthome{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 300px;
+  height: 150vh;
+  text-align: center;
+  line-height: 50px;
+  background-color: var(--glow);
+}
+.portfolio{
+  width: 1200px;
+  height: 100vh;
+  text-align: center;
+  background: var(--white1);
+  border: 20px solid var(--white);
+}
+.homephoto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  font-size: 80px;
+}
+.hometext{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
 }

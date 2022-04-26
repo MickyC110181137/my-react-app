@@ -29,7 +29,7 @@ const Imageslider01 = ({ slides }) => {
             className={index1 === current ? "slide1 active" : "slide1"}
             key={index1}
           >
-            <div className="portfoliotext">作品集</div>
+            <div className="portfoliotext"></div>
             {index1 === current && (
               <Link to={`Portfolio${current}`}>
                 <img className="image1" src={slide.image} alt="travel image" />

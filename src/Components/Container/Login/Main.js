@@ -33,12 +33,11 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <main>
       {user.email !== "" ? (
         <main>
           <div className="Welcome">
             <h2>
-              {" "}
               Welcome,<span>{user.name}</span>
             </h2>
             <div className="box2">
@@ -52,7 +51,7 @@ function App() {
       ) : (
         <LoginForm Login={Login} error={error} />
       )}
-    </div>
+    </main>
   );
 }
 export default App;

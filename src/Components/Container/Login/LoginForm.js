@@ -1,15 +1,32 @@
 import React, { useState } from "react";
 import "./LoginForm.css";
+import axios from "axios";
+import { Container } from "./LonginForm.style";
 
 function LoginForm({ Login, error }) {
-  const [details, setDetails] = useState({ name: "", email: "", password: "" });
-  const submitHandler = (e) => {
+  const [details, setDetails] = useState({
+    phone: "",
+    email: "",
+    password: "",
+  });
+
+  const submitHandler = async (e) => {
     e.preventDefault();
     Login(details);
+    console.log(details);
+    await axios({
+      method: "POST",
+      url: "https://evening-cliffs-38545.herokuapp.com/api/user",
+      data: details,
+      headers: {
+        "content-type": "application/json: charset=UTF-8",
+      },
+    });
   };
 
   return (
     <main>
+      <Container>123</Container>
       <form onSubmit={submitHandler}>
         <div className="Login">
           <div className="box">
@@ -26,9 +43,9 @@ function LoginForm({ Login, error }) {
                 autoComplete="off"
                 placeholder=" "
                 onChange={(e) =>
-                  setDetails({ ...details, name: e.target.value })
+                  setDetails({ ...details, phone: e.target.value })
                 }
-                value={details.name}
+                value={details.phone}
               />
               <label htmlFor="email" className="form__label">
                 你の名字

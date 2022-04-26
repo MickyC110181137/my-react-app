@@ -1,16 +1,11 @@
-main{
-  min-height: calc(100vh - 3rem);
-  display: grid;
-  place-items: center;
-  background-color: #184e77;
-}
+
 form{
   display: flex;
   flex-direction: row;
-  height: 500px;
-  width: 500px;
+  height: 100%;
+  width:  1160px;
   justify-content: center;
-  background-color: #1e6091;
+  background-color: #ade8f4;
   align-items: center;
   flex-wrap:nowrap;
 }
@@ -22,7 +17,7 @@ form{
   justify-content: center;
   font-family: "Convergence",sans-serif;
   font-size: 1.2rem;
-  background-color: #1e6091;
+  background-color: #ade8f4;
 }
   
 .box{
@@ -82,7 +77,7 @@ form{
   color:#4cc9f0;
   cursor:text;
   transition: top 200ms ease-in,left 200ms ease-in,font-size 200ms ease-in;
-  background-color: #1e6091;
+  background-color: #ade8f4;
 }
 .form__input:focus~.form__label,
 .form__input:not(:placeholder-shown).form__input:not(:focus)~.form__label{
