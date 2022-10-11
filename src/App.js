@@ -1,5 +1,5 @@
 import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 
 import Main from "./Components/Container/Login/Main";
@@ -9,11 +9,16 @@ import Todomain from "./Components/Container/Todo/Todomain";
 import Calculator from "./Components/Container/Calculator/Calculator";
 import Imageslider01 from "./Components/Container/MainSliderImage/Imageslider01.js";
 import { SliderData1 } from "./Components/Container/MainSliderImage/SliderData1";
+import Menu from "./Components/Container/Menu/Menu";
 
 function App() {
+  const [toggle, setToggle] = useState(true);
   return (
     <BrowserRouter>
       <main>
+        <div className="test">
+          <Menu toggle={toggle} />
+        </div>
         <div className="flexhome">
           <div className="starthome">
             <div className="homephoto">Hello</div>
@@ -32,6 +37,12 @@ function App() {
             </Routes>
           </div>
         </div>
+        <div
+          className="toggle"
+          onClick={() => {
+            setToggle((prev) => !prev);
+          }}
+        ></div>
       </main>
     </BrowserRouter>
   );

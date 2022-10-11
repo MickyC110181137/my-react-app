@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   background-color: #ade8f4;
+
 }
 
 .image1 {
@@ -58,8 +59,4 @@
   position: absolute;
   top: 50%;
   left: 43%;
-}
-a{
-  height: 180px;
-  width: 180px;
 }

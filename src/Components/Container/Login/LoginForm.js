@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./LoginForm.css";
 import axios from "axios";
-import { Container } from "./LonginForm.style";
 
 function LoginForm({ Login, error }) {
   const [details, setDetails] = useState({
@@ -26,7 +25,6 @@ function LoginForm({ Login, error }) {
 
   return (
     <main>
-      <Container>123</Container>
       <form onSubmit={submitHandler}>
         <div className="Login">
           <div className="box">
