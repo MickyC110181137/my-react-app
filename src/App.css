@@ -347,40 +347,10 @@ main{
   justify-content: center;
   align-items: center;
   background-color: #111;
+  overflow: hidden;
 }
 .body{
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.cursor{
-  position: fixed;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  pointer-events: none;
-  background: #fff;
-  mix-blend-mode: difference;
-  transform: translate(-50%,-50%);
-}
-
-
-.a1{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  overflow: hidden;
-}
-.a1 .a2 {
-  text-decoration: none;
-  color: none;
-  font-size: 3rem;
-  margin: 10px 0;
-  padding: 0 20px;
-  color: #fff;
-}
-.a1:hover .cursor{
-  transform: scale(5);
-  transition: transform 0.5s;
 }
