@@ -4,7 +4,7 @@ import Link from "../Container/Imagecursor/Link";
 import "./cursor.css";
 
 export default function Cursor() {
-  const delay = 18;
+  const delay = 14;
 
   const dot = useRef(null);
   const dotOutline = useRef(null);

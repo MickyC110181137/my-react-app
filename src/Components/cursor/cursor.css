@@ -24,7 +24,6 @@
 
 .links-container{
     display: flex;
-    justify-content: space-around;
     height: 400px;
-    width: 600px;
+    width: 100%;
 }

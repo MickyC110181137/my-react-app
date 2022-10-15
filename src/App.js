@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import "./App.css";
 import Cursor from "./Components/cursor/cursor";
 import Menu from "./Components/Container/Menu/Menu";
+import Intro from "./Components/Container/Intro/Intro";
 
 function App() {
   const [toggle, setToggle] = useState(false);
@@ -15,6 +16,7 @@ function App() {
         </div>
 
         <div className="body">
+          <Intro />
           <Cursor />
         </div>
 
