@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import Cursor from "./Components/cursor/cursor";
 import Menu from "./Components/Container/Menu/Menu";
@@ -8,6 +8,16 @@ import Intro from "./Components/Container/Intro/Intro";
 function App() {
   const [toggle, setToggle] = useState(false);
 
+  useEffect(() => {
+    const Chcolor = document.getElementById("Chcolor");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 780) {
+        Chcolor.style.backgroundColor = "black";
+      } else {
+        Chcolor.style.backgroundColor = "transparent";
+      }
+    });
+  });
   return (
     <BrowserRouter>
       <main>
@@ -18,6 +28,17 @@ function App() {
         <div className="body">
           <Intro />
           <Cursor />
+          <div
+            className="test1"
+            id="Chcolor"
+            style={{
+              height: "400px",
+              width: "100%",
+              backgroundColor: "white",
+            }}
+          >
+            12313
+          </div>
         </div>
 
         <div
