@@ -11,13 +11,14 @@ function App() {
   useEffect(() => {
     const Chcolor = document.getElementById("Chcolor");
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 780) {
-        Chcolor.style.backgroundColor = "black";
-      } else {
-        Chcolor.style.backgroundColor = "transparent";
+      if (window.scrollY > 650 && window.scrollY < 1160) {
+        Chcolor.style.backgroundColor = `rgba(${(1160 - window.scrollY) / 2}, ${
+          (1160 - window.scrollY) / 2
+        }, ${(1160 - window.scrollY) / 2})`;
       }
     });
-  });
+  }, []);
+
   return (
     <BrowserRouter>
       <main>
@@ -25,16 +26,14 @@ function App() {
           <Menu toggle={toggle} />
         </div>
 
-        <div className="body">
+        <div className="body" id="Chcolor" style={{ backgroundColor: "white" }}>
           <Intro />
           <Cursor />
           <div
             className="test1"
-            id="Chcolor"
             style={{
-              height: "400px",
+              height: "1000px",
               width: "100%",
-              backgroundColor: "white",
             }}
           >
             12313
