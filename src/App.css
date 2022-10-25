@@ -88,6 +88,7 @@
 
 body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow: auto;
 }
 .Welcome{
   display: flex;
@@ -107,16 +108,7 @@ h2{
   width: 1200px;
   background-color: #1e6091;
 }
-.row{
-  height: 100%;
-  width: 1160px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  background-color: #1e6091;
-  align-items: center;
-  flex-wrap:nowrap;
-}
+
 .picture{
   height: 600px;
   width: 1200px;
@@ -346,15 +338,14 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 .body{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  overflow: hidden;
   width: 100%;
-  height: 100%;
 }
 .test{
   background-color: #0077b6;

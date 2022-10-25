@@ -75,4 +75,12 @@
     background: rgb(32, 32, 32);
   }
 
-  
+  .row{
+    height: 100%;
+    width: 1160px;
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap:nowrap;
+  }

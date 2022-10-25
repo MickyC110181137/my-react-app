@@ -16,6 +16,10 @@ function App() {
         Chcolor.current.style.backgroundColor = `rgba(${
           (1160 - window.scrollY) / 2
         }, ${(1160 - window.scrollY) / 2}, ${(1160 - window.scrollY) / 2})`;
+      } else if (window.scrollY < 650) {
+        Chcolor.current.style.backgroundColor = "white";
+      } else if (window.scrollY > 1160) {
+        Chcolor.current.style.backgroundColor = "black";
       }
     });
   }, []);
@@ -34,17 +38,9 @@ function App() {
         >
           <Intro />
           <Cursor />
-          <div
-            className="test1"
-            style={{
-              height: "1000px",
-              width: "100%",
-            }}
-          >
-            <Overview />
-          </div>
+          <div style={{ height: "500px", width: "100%" }}></div>
+          <Overview />
         </div>
-
         <div
           className="toggle"
           onClick={() => {

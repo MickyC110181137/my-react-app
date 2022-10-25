@@ -30,35 +30,34 @@ export default function Slider() {
   };
 
   return (
-    <main>
-      <div className="row">
-        <div className="container-slider">
-          {dataSlider.map((obj, index) => {
+    <div className="row">
+      <div className="container-slider">
+        {dataSlider.map((obj, index) => {
+          return (
+            <Photo
+              obj={obj}
+              index={index}
+              slideIndex={slideIndex}
+              key={obj.id}
+            />
+          );
+        })}
+        <BtnSlider moveSlide={nextSlide} direction={"next"} />
+        <BtnSlider moveSlide={prevSlide} direction={"prev"} />
+
+        <div className="container-dots">
+          {Array.from({ length: 5 }).map((item, index) => {
             return (
-              <Photo
-                obj={obj}
+              <MoveDot
+                key={index}
                 index={index}
                 slideIndex={slideIndex}
-                key={obj.id}
+                moveDot={moveDot}
               />
             );
           })}
-          <BtnSlider moveSlide={nextSlide} direction={"next"} />
-          <BtnSlider moveSlide={prevSlide} direction={"prev"} />
-
-          <div className="container-dots">
-            {Array.from({ length: 5 }).map((item, index) => {
-              return (
-                <MoveDot
-                  index={index}
-                  slideIndex={slideIndex}
-                  moveDot={moveDot}
-                />
-              );
-            })}
-          </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 }
