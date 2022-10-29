@@ -46,32 +46,30 @@ export default function Upload() {
     setImgUrl(res.data.data.link);
   };
   return (
-    <main>
-      <form id="form1" runat="server">
-        <div className="gridalbum">
-          <div className="flex">
-            {album.map((album1) => {
-              return (
-                <img
-                  key={album1.id}
-                  src={album1.link}
-                  width={100}
-                  height={100}
-                ></img>
-              );
-            })}
-          </div>
-          <input
-            id="uploadfile"
-            type={"file"}
-            style={{ display: "none" }}
-            onChange={onFileUpload}
-          />
-          <label className="label001" htmlFor="uploadfile" type="button1">
-            <img src={imgUrl || Png} width={60}></img>
-          </label>
+    <form id="form1" runat="server">
+      <div className="gridalbum">
+        <div className="flex">
+          {album.map((album1) => {
+            return (
+              <img
+                key={album1.id}
+                src={album1.link}
+                width={100}
+                height={100}
+              ></img>
+            );
+          })}
         </div>
-      </form>
-    </main>
+        <input
+          id="uploadfile"
+          type={"file"}
+          style={{ display: "none" }}
+          onChange={onFileUpload}
+        />
+        <label className="label001" htmlFor="uploadfile" type="button1">
+          <img src={imgUrl || Png} width={60}></img>
+        </label>
+      </div>
+    </form>
   );
 }

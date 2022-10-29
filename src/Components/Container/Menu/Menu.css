@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 #curtain span{
@@ -77,30 +78,85 @@
     background-position: 5px;
 }
 
-
 ul{
-    position: absolute;
-    z-index: 110;
     transition: hidden;
+    z-index: 110;
     opacity: 0;
     transition: 0.5s;
     transition-delay: 0s;
 }
+
 #curtain.active ul{
     visibility: visible;
     opacity: 1;
     transition-delay: 0.7s;
+    display: flex;
+    position: relative;
+    flex-direction: column; 
+}
+
+#curtain ul li::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 20em;
+    pointer-events: none;
+    opacity: 0;
+    letter-spacing: 30px;
+    transition: 0.5s;
+    white-space: nowrap;
+}
+#curtain ul li:hover::before{
+    opacity: 0.05;
+    letter-spacing: 0px;
 }
 
 #curtain ul li{
     list-style: none;
-    margin: 10px 0;
 }
+
 #curtain ul li a{
     text-decoration: none;
     color: #fff;
     font-size: 4em;
     text-align: center;
-    display: block;
-    font-family: consolas;
+    position: relative;
+    display: inline-block;
+    padding: 6px 15px;
+    background-color: #2196f3;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 2px;
+        overflow: hidden;
+    letter-spacing: 10px;
+
+}
+#curtain ul:hover li a{
+    opacity: 0;
+}
+
+#curtain ul li a:hover{
+    transform: scale(1.4);
+    background-color: #ff3f81;
+    opacity: 1;
+}
+#curtain ul li a:hover::before{
+    left: calc(100% + 100px);
+    transition: 0.5s;
+    transition-delay: 0.2s;
+}
+
+#curtain ul li a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 80px;
+    height: 100%;
+    background: linear-gradient(90deg, transparent,rgba(255,255,255,0.8),transparent);
+    transform: skewX(35deg);
+    transition: 0s;
 }

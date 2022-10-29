@@ -15,9 +15,22 @@
     border-top-width: 2px;
     border-bottom-width: 1px;
     border-color: #fff;
+    transition: 1s;
 }
 
-.Profilebox .textbox{
+#Profilebox{
+    display: flex;;
+    flex-direction: column;
+    height: 750px;
+    width: 100%;
+    border-top: solid;
+    border-bottom: solid;
+    border-top-width: 2px;
+    border-bottom-width: 1px;
+    border-color: #fff;
+}
+
+.textbox{
     font-size:120px;
     color:#fff;
 }
@@ -27,8 +40,6 @@
     width: 100%;
     height: 0px;
     background-color: #fff;
-    top: 1;
-    left: 0;
     mix-blend-mode: difference;
     transition-property: height;
     transition-duration: 1s;
@@ -36,4 +47,19 @@
 
 .Profilebox:hover .textAni{
     height: 136px;
+}
+
+.Visbox{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: aquamarine;
+    transform: scaleY(0);
+    transition: transform 1s;
+}
+#Visbox{
+    transform: scaleY(1);
+    transform-origin: top;
 }

@@ -15,10 +15,12 @@ export default function Overview() {
         }}
       >
         <div className="textbox">
-          {Pclick === 1 ? <Slider /> : <div />}
+          <div id={Pclick === 1 ? "Visbox" : ""} className="Visbox">
+            {Pclick === 1 ? <Slider /> : <div />}
+          </div>
           ABCD01
         </div>
-        <div className="textaAni"></div>
+        <div className={Pclick === 1 ? "" : "textAni"}></div>
       </div>
       <div
         className="Profilebox"
@@ -27,10 +29,12 @@ export default function Overview() {
         }}
       >
         <div className="textbox">
-          {Pclick === 2 ? <Upload /> : <div />}
+          <div id={Pclick === 2 ? "Visbox" : ""} className="Visbox">
+            {Pclick === 2 ? <Upload /> : <div />}
+          </div>
           ABCD02
         </div>
-        <div className="textAni"></div>
+        <div className={Pclick === 2 ? "" : "textAni"}></div>
       </div>
       <div className="Profilebox">
         <div className="textbox">ABCD03</div>
@@ -44,7 +48,7 @@ export default function Overview() {
         <div className="textbox">ABCD05</div>
         <div className="textAni"></div>
       </div>
-      <div className="s" style={{ height: "5555px", width: "100%" }}></div>
+      <div className="s" style={{ height: "2000px", width: "100%" }}></div>
     </div>
   );
 }

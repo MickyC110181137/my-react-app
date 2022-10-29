@@ -8,19 +8,23 @@ export default function Menu({ toggle }) {
       <span></span>
       <span></span>
       <ul>
-        <li>
+        <li data-text="Home">
           <a href="#">Home</a>
         </li>
-        <li>
+        <br />
+        <li data-text="About">
           <a href="#">About</a>
         </li>
-        <li>
+        <br />
+        <li data-text="Services">
           <a href="#">Services</a>
         </li>
-        <li>
+        <br />
+        <li data-text="Portfolio">
           <a href="#">Portfolio</a>
         </li>
-        <li>
+        <br />
+        <li data-text="Contact">
           <a href="#">Contact</a>
         </li>
       </ul>
