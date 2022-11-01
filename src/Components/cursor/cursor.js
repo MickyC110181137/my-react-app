@@ -103,16 +103,17 @@ export default function Cursor() {
     <div>
       <div ref={dotOutline} className="cursor-dot-outline"></div>
       <div ref={dot} className="cursor-dot"></div>
-
-      <div className="links-container">
-        {[...Array(4).keys()].map((i) => (
-          <Link
-            key={i}
-            mouseOverEvent={mouseOverEvent}
-            mouseOutEvent={mouseOutEvent}
-            src={Getimage(i + 1)}
-          />
-        ))}
+      <div className="ii">
+        <div className="links-container">
+          {[...Array(4).keys()].map((i) => (
+            <Link
+              key={i}
+              mouseOverEvent={mouseOverEvent}
+              mouseOutEvent={mouseOutEvent}
+              src={Getimage(i + 1)}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

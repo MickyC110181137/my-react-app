@@ -1,10 +1,18 @@
 import { BrowserRouter } from "react-router-dom";
 import React, { useState, useEffect, useRef } from "react";
 import "./App.css";
-import Cursor from "./Components/cursor/cursor";
+
 import Menu from "./Components/Container/Menu/Menu";
-import Intro from "./Components/Container/Intro/Intro";
-import Overview from "./Components/Container/Overview/Overview";
+import Header from "./Components/Principal/Header/Header";
+import Nav from "./Components/Principal/Nav/Nav";
+import About from "./Components/Principal/About/About";
+import Experience from "./Components/Principal/Experience/Experience";
+import Testmonials from "./Components/Principal/Testmonials/Testmonials";
+import Contact from "./Components/Principal/Contact/Contact";
+import Services from "./Components/Principal/Services/Services";
+import Portfolio from "./Components/Principal/Portfolio/Portfolio";
+import Footer from "./Components/Principal/Footer/Footer";
+import Cursor from "./Components/cursor/cursor";
 
 function App() {
   const [toggle, setToggle] = useState(false);
@@ -30,17 +38,16 @@ function App() {
         <div className="test">
           <Menu toggle={toggle} />
         </div>
-
-        <div
-          ref={Chcolor}
-          className="body"
-          style={{ backgroundColor: "white" }}
-        >
-          <Intro />
-          <Cursor />
-          <div style={{ height: "500px", width: "100%" }}></div>
-          <Overview />
-        </div>
+        <Header />
+        <Cursor />
+        <Nav />
+        <About />
+        <Experience />
+        <Services />
+        <Portfolio />
+        <Testmonials />
+        <Contact />
+        <Footer />
         <div
           className="toggle"
           onClick={() => {

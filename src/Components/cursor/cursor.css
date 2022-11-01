@@ -24,6 +24,16 @@
 
 .links-container{
     display: flex;
-    height: 400px;
-    width: 100%;
+    object-fit: cover;
+    width: 255px;
+}
+.ii{
+    background-color: #dc5656;
+    width: 1000px;
+    height: 25rem;
+    position: relative;
+    left: calc(30% - 11rem);
+    border-radius: 12rem 12rem 12rem 12rem;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    overflow: hidden;
 }
