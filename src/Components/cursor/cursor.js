@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
-import Getimage from "../Container/Imagecursor/Getimage";
-import Link from "../Container/Imagecursor/Link";
+/* import Getimage from "../Container/Imagecursor/Getimage";
+import Link from "../Container/Imagecursor/Link"; */
 import "./cursor.css";
 
 export default function Cursor() {
@@ -103,18 +103,17 @@ export default function Cursor() {
     <div>
       <div ref={dotOutline} className="cursor-dot-outline"></div>
       <div ref={dot} className="cursor-dot"></div>
-      <div className="ii">
-        <div className="links-container">
-          {[...Array(4).keys()].map((i) => (
+
+      {/* <div className="links-container">
+          { [...Array(4).keys()].map((i) => (
             <Link
               key={i}
               mouseOverEvent={mouseOverEvent}
               mouseOutEvent={mouseOutEvent}
               src={Getimage(i + 1)}
             />
-          ))}
-        </div>
-      </div>
+          )) }
+        </div> */}
     </div>
   );
 }
