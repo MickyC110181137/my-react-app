@@ -1,9 +1,31 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Contact.css";
 import { IoMdMail } from "react-icons/io";
 import { SiMessenger, SiWhatsapp } from "react-icons/si";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_0nav1e7",
+        "template_mxjiojo",
+        form.current,
+        "Pk5Eii7Q2NlLx79eX"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <section id="contact">
       <h5>Get In touch</h5>
@@ -49,7 +71,7 @@ const Contact = () => {
           </article>
         </div>
         {/* END OF CONTACT OPTIONS */}
-        <form action="">
+        <form ref={form} onSubmit={sendEmail}>
           <input
             type="text"
             name="name"
