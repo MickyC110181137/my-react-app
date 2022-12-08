@@ -1,6 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
+import RingLoader from "react-spinners/RingLoader";
 
 import Header from "./Components/Principal/Header/Header";
 import Nav from "./Components/Principal/Nav/Nav";
@@ -15,29 +16,53 @@ import Cursor from "./Components/cursor/cursor";
 
 function App() {
   /* const [toggle, setToggle] = useState(false); */
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+  }, []);
 
   return (
-    <BrowserRouter>
-      {/* <div className="test">
-          <Menu toggle={toggle} />
-        </div> */}
-      <Header />
-      <Cursor />
-      <Nav />
-      <About />
-      <Experience />
-      <Services />
-      <Portfolio />
-      <Testmonials />
-      <Contact />
-      <Footer />
-      {/* <div
-          className="toggle"
-          onClick={() => {
-            setToggle((prev) => !prev);
-          }}
-        ></div> */}
-    </BrowserRouter>
+    <div>
+      {
+        loading ? (
+          <div className="load">
+            <RingLoader
+              color={"#36d7b7"}
+              loading={loading}
+              size={250}
+              aria-label="Loading Spinner"
+              data-testid="loader"
+            />
+          </div>
+        ) : (
+          /* <div className="test">
+      <Menu toggle={toggle} />
+    </div> */
+          <BrowserRouter>
+            <Header />
+            <Cursor />
+            <Nav />
+            <About />
+            <Experience />
+            <Services />
+            <Portfolio />
+            <Testmonials />
+            <Contact />
+            <Footer />
+          </BrowserRouter>
+        )
+        /* <div
+      className="toggle"
+      onClick={() => {
+        setToggle((prev) => !prev);
+      }}
+    ></div> */
+      }
+    </div>
   );
 }
 export default App;
