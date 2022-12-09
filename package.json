@@ -19,6 +19,7 @@
     "react-scripts": "^5.0.1",
     "react-scroll-motion": "^0.3.0",
     "react-spinners": "^0.13.7",
+    "react-tsparticles": "^2.6.0",
     "swiper": "^8.4.4",
     "web-vitals": "^2.1.4"
   },

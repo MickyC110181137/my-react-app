@@ -1,6 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import "./App.css";
+
 import RingLoader from "react-spinners/RingLoader";
 
 import Header from "./Components/Principal/Header/Header";
@@ -13,6 +14,7 @@ import Services from "./Components/Principal/Services/Services";
 import Portfolio from "./Components/Principal/Portfolio/Portfolio";
 import Footer from "./Components/Principal/Footer/Footer";
 import Cursor from "./Components/cursor/cursor";
+import Loading1 from "./Components/Principal/Loading/Loading1";
 
 function App() {
   /* const [toggle, setToggle] = useState(false); */
@@ -29,14 +31,17 @@ function App() {
     <div>
       {
         loading ? (
-          <div className="load">
-            <RingLoader
-              color={"#36d7b7"}
-              loading={loading}
-              size={250}
-              aria-label="Loading Spinner"
-              data-testid="loader"
-            />
+          <div>
+            <Loading1></Loading1>
+            <div className="load">
+              <RingLoader
+                color={"#36d7b7"}
+                loading={loading}
+                size={250}
+                aria-label="Loading Spinner"
+                data-testid="loader"
+              />
+            </div>
           </div>
         ) : (
           /* <div className="test">
