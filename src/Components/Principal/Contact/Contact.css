@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 .container.contact_container{
     width: 58%;
     display: grid;
@@ -35,7 +37,40 @@
     font-size: 0.8rem;
 }
 
-/*============= FORM ============= */
+
+.buttonDiv{
+    width: 100%;
+}
+
+.buttonAniStop{
+    font-size: 1rem;
+    letter-spacing: 15px;
+    width: max-content;
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.75rem 1.2rem;
+    height: 100%;
+    border: 2px solid #b7e4c7;
+    border-radius: 10px;
+    animation: click 2s ease-in-out ;
+    transition: 0.5s ease;
+    background: #b7e4c7;
+  }
+
+@keyframes click {
+    0%{
+        background: #4db5ff;
+        border: 2px solid #4db5ff;
+    }
+    100%{
+        background: #4ac765;
+        border: 2px solid #4ac765;
+    }
+}
+
+
+
+    /*============= FORM ============= */
 
 form{
     display: flex;

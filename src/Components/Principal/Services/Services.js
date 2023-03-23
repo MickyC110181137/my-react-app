@@ -17,27 +17,7 @@ const Services = () => {
           <ul className="service_list">
             <li>
               <BsCheckAll className="service_list-icon" />
-              <p>lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-            <li>
-              <BsCheckAll className="service_list-icon" />
-              <p>lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-            <li>
-              <BsCheckAll className="service_list-icon" />
-              <p>lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-            <li>
-              <BsCheckAll className="service_list-icon" />
-              <p>lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-            <li>
-              <BsCheckAll className="service_list-icon" />
-              <p>lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-            <li>
-              <BsCheckAll className="service_list-icon" />
-              <p>lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>Completely by feeling-完全靠感覺</p>
             </li>
           </ul>
         </article>
@@ -46,31 +26,10 @@ const Services = () => {
           <div className="service_head">
             <h3>Web Devekionebt</h3>
           </div>
-
           <ul className="service_list">
             <li>
               <BsCheckAll className="service_list-icon" />
-              <p>lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-            <li>
-              <BsCheckAll className="service_list-icon" />
-              <p>lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-            <li>
-              <BsCheckAll className="service_list-icon" />
-              <p>lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-            <li>
-              <BsCheckAll className="service_list-icon" />
-              <p>lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-            <li>
-              <BsCheckAll className="service_list-icon" />
-              <p>lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-            <li>
-              <BsCheckAll className="service_list-icon" />
-              <p>lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>同上</p>
             </li>
           </ul>
         </article>
@@ -83,27 +42,7 @@ const Services = () => {
           <ul className="service_list">
             <li>
               <BsCheckAll className="service_list-icon" />
-              <p>lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-            <li>
-              <BsCheckAll className="service_list-icon" />
-              <p>lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-            <li>
-              <BsCheckAll className="service_list-icon" />
-              <p>lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-            <li>
-              <BsCheckAll className="service_list-icon" />
-              <p>lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-            <li>
-              <BsCheckAll className="service_list-icon" />
-              <p>lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-            <li>
-              <BsCheckAll className="service_list-icon" />
-              <p>lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>同上</p>
             </li>
           </ul>
         </article>

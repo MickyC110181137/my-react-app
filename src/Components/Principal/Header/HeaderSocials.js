@@ -9,7 +9,11 @@ const HeaderSocials = () => {
       <a href="https://linkedin.com" target="_blank" rel="noreferrer">
         <BsLinkedin />
       </a>
-      <a href="https://github.com" target="_blank" rel="noreferrer">
+      <a
+        href="https://github.com/MickyC110181137/my-react-app"
+        target="_blank"
+        rel="noreferrer"
+      >
         <FaGithub />
       </a>
       <a href="https://dribbble.com" target="_blank" rel="noreferrer">

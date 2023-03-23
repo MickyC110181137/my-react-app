@@ -40,13 +40,7 @@ const Experience = () => {
                 <small className="text-light">Experienced</small>
               </div>
             </article>
-            <article className="experience_details">
-              <BsCheckAll className="experience_details-icon" />
-              <div>
-                <h4>Tailwind</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
+
             <article className="experience_details">
               <BsCheckAll className="experience_details-icon" />
               <div>
@@ -64,20 +58,6 @@ const Experience = () => {
               <BsCheckAll className="experience_details-icon" />
               <div>
                 <h4>Node JS</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-            <article className="experience_details">
-              <BsCheckAll className="experience_details-icon" />
-              <div>
-                <h4>MongoDB</h4>
-                <small className="text-light">Intermediate</small>
-              </div>
-            </article>
-            <article className="experience_details">
-              <BsCheckAll className="experience_details-icon" />
-              <div>
-                <h4>PHP</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import "./Contact.css";
 import { IoMdMail } from "react-icons/io";
 import { SiMessenger, SiWhatsapp } from "react-icons/si";
@@ -6,6 +6,27 @@ import emailjs from "emailjs-com";
 
 const Contact = () => {
   const form = useRef();
+  const buttom = useRef();
+  const [message, setMessage] = useState("Send Message");
+  const [bottom, setBottom] = useState(false);
+  const [name, setName] = useState("btn");
+
+  useEffect(() => {
+    if (bottom === true) {
+      setName("buttonAniStop");
+      setMessage("SENDING MESSAGE");
+      setTimeout(() => {
+        setMessage("SENDING SUCCESSFUL");
+      }, 2000);
+    }
+    setTimeout(() => {
+      setBottom(false);
+    }, 3000);
+    if (bottom === false) {
+      setName("btn");
+      setMessage("Send Message");
+    }
+  }, [bottom]);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -36,7 +57,7 @@ const Contact = () => {
           <article className="contact_option">
             <IoMdMail className="contact_option-icon" />
             <h4>Email</h4>
-            <h5>dummyegatori@gmail.com</h5>
+            <h5>1209436216micky@gmail.com</h5>
             <a
               href="mailto:1209436216micky@gmail.com"
               target="_blank"
@@ -48,9 +69,9 @@ const Contact = () => {
           <article className="contact_option">
             <SiMessenger className="contact_option-icon" />
             <h4>Messenger</h4>
-            <h5>dummyegatori@gmail.com</h5>
+            <h5>1209436216micky@gmail.com</h5>
             <a
-              href="https://m.me/profile.php?id=100013102720729"
+              href="https://m.me/100013102720729"
               target="_blank"
               rel="noreferrer"
             >
@@ -59,14 +80,14 @@ const Contact = () => {
           </article>
           <article className="contact_option">
             <SiWhatsapp className="contact_option-icon" />
-            <h4>WhatsApp</h4>
-            <h5>dummyegatori@gmail.com</h5>
+            <h4>Phone</h4>
+            <h5>0965598438</h5>
             <a
               href="https://api.whatsapp.com/send?"
               target="_blank"
               rel="noreferrer"
             >
-              Send a message
+              Call me
             </a>
           </article>
         </div>
@@ -85,9 +106,18 @@ const Contact = () => {
             placeholder="Your Message"
             required
           ></textarea>
-          <button type="submit" className="btn btn-primary">
-            Send Message
-          </button>
+          <div className="buttonDiv">
+            <button
+              ref={buttom}
+              onClick={() => {
+                setBottom(true);
+              }}
+              type="submit"
+              className={name}
+            >
+              {message}
+            </button>
+          </div>
         </form>
       </div>
     </section>

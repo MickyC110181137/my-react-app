@@ -16,27 +16,23 @@ import "swiper/css/pagination";
 const data = [
   {
     avatar: AVTR1,
-    name: "Tina Snow",
-    review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,nobis minus. Ut voluptatum eum deleniti, magni quo culpa totam  beatae nemo molestias reiciendis perferendis eaque doloribus aliquid! Ducimus, provident obcaecati!",
+    name: "Micky Huang",
+    review: "涸轍遺鮒，旦暮成枯;人而無志，與彼何殊。",
   },
   {
     avatar: AVTR2,
-    name: "Shatta Wale",
-    review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,nobis minus. Ut voluptatum eum deleniti, magni quo culpa totam  beatae nemo molestias reiciendis perferendis eaque doloribus aliquid! Ducimus, provident obcaecati!",
+    name: "Micky Huang",
+    review: "Surprise",
   },
   {
     avatar: AVTR3,
-    name: "Kwame Despite",
-    review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,nobis minus. Ut voluptatum eum deleniti, magni quo culpa totam  beatae nemo molestias reiciendis perferendis eaque doloribus aliquid! Ducimus, provident obcaecati!",
+    name: "Micky Huang",
+    review: "Me Again",
   },
   {
     avatar: AVTR4,
-    name: "Nana Ama McBrown",
-    review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,nobis minus. Ut voluptatum eum deleniti, magni quo culpa totam  beatae nemo molestias reiciendis perferendis eaque doloribus aliquid! Ducimus, provident obcaecati!",
+    name: "Micky Huang",
+    review: "Still me",
   },
 ];
 

@@ -23,26 +23,21 @@ const About = () => {
             <article className="about_card">
               <BiAward className="about_icon" />
               <h5>Experience</h5>
-              <small>1+ Learning</small>
+              <small>0</small>
             </article>
             <article className="about_card">
               <FiUsers className="about_icon" />
               <h5>Clients</h5>
-              <small>200+ Worldwide</small>
+              <small>YOU σ`∀´)σ</small>
             </article>
             <article className="about_card">
               <VscFolderLibrary className="about_icon" />
               <h5>Projects</h5>
-              <small>80+ Completed</small>
+              <small>THIS</small>
             </article>
           </div>
 
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui autem
-            perferendis eaque, ullam ipsum sit dolores maxime esse omnis
-            consequatur atque provident temporibus quas obcaecati iusto earum,
-            perspiciatis corrupti. Quam.
-          </p>
+          <p>這是從網上抄的範例，我從這個範例中學到很多小細節</p>
           <a href="#contact" className="btn btn-primary">
             Let`s talk
           </a>
