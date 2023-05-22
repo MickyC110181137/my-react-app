@@ -2,29 +2,21 @@ import React from "react";
 import "./Portfolio.css";
 import IMG1 from "../../assets/portfolio1.jpg";
 import IMG2 from "../../assets/portfolio2.jpg";
-import IMG3 from "../../assets/portfolio3.jpg";
 
 const dataPortfolio = [
   {
     id: 1,
     image: IMG1,
     tital: "Crypto Currency Dashboard & Financial Visualization",
-    github: "https://github.com",
-    demo: "https://dribble.com/Alien_pixels",
+    github: "https://github.com/MickyC110181137/my-app",
+    demo: "https://arknights-cover-imitate.netlify.app",
   },
   {
     id: 2,
     image: IMG2,
     tital: "Crypto Currency Dashboard & Financial Visualization",
-    github: "https://github.com",
-    demo: "https://dribble.com/Alien_pixels",
-  },
-  {
-    id: 3,
-    image: IMG3,
-    tital: "Crypto Currency Dashboard & Financial Visualization",
-    github: "https://github.com",
-    demo: "https://dribble.com/Alien_pixels",
+    github: "https://github.com/MickyC110181137/WEBHW",
+    demo: "https://hwork-html.netlify.app",
   },
 ];
 
